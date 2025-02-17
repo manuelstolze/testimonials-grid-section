@@ -1,0 +1,14 @@
+body {
+    .attribution { font-size: 11px; text-align: center; padding: 1.25rem; width: 100%;}
+    .attribution a { color: white; }
+}
+
+header {}
+
+@media (min-width: 577px) {
+    .attribution { font-size: 11px; text-align: center; padding-bottom: 1rem; width: 100%; position: absolute; bottom: 0;}
+    /*.attribution a { color: var(--attribution); }*/
+
+    main {
+    }
+}
