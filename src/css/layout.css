@@ -1,14 +1,89 @@
 body {
-    .attribution { font-size: 11px; text-align: center; padding: 1.25rem; width: 100%;}
-    .attribution a { color: white; }
+    background-color: var(--grey-100);
+    justify-items: center;
+
+    .container {
+        max-width: 311px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; width: 100%;}
+    .attribution a { color: var(--grey-500); }
+}
+
+.card {
+    .quotation {
+        display: none;
+    }
 }
 
 header {}
 
 @media (min-width: 577px) {
-    .attribution { font-size: 11px; text-align: center; padding-bottom: 1rem; width: 100%; position: absolute; bottom: 0;}
-    /*.attribution a { color: var(--attribution); }*/
+    body {
+        justify-items: center;
 
-    main {
+        .container {
+            max-width: 1300px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            grid-column-gap: 2rem;
+            grid-row-gap: 2rem;
+
+            align-items: stretch;
+
+            .card {
+                padding: 2rem;
+                border-radius: 8px;
+                gap: 1rem;
+
+                box-shadow: 2rem 2rem 3rem 4px var(--grey-200);
+            }
+        }
     }
-}
+
+
+    #card-1 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    #card-2 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    #card-3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #card-4 {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    #card-5 {
+        grid-area: 1 / 4 / 3 / 5;
+    }
+
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding-bottom: 1rem;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+    }
+
+
+    .card {
+        position: relative;
+        .quotation {
+            display: unset;
+            position: absolute;
+            /*max-height: 2rem;*/
+            /*max-width: 2rem;*/
+            right: 3rem;
+            top: 1rem;
+        }
+    }
+}s

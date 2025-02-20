@@ -1,4 +1,38 @@
 body {
-    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 15px;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.25;
+    z-index: 1;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (min-width: 577px) {
+    body {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }

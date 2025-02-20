@@ -1,4 +1,31 @@
 :root {
     /* Primary */
+    --purple-50: hsl(260, 100%, 95%);
+    --purple-300: hsl(264, 82%, 80%);
+    --purple-500: hsl(263, 55%, 52%);
 
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200: hsl(0, 0%, 81%);
+    --grey-400: hsl(224, 10%, 45%);
+    --grey-500: hsl(217, 19%, 35%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
 }
+
+.white { background-color: var(--white); }
+.grey { background-color: var(--grey-500); }
+.dark-blue { background-color: var(--dark-blue); }
+.black { background-color: var(--black);}
+.purple { background-color: var(--purple-500); }
+
+.text-purple-50 { color: var(--purple-50); }
+.text-white { color: var(--white); }
+.text-grey-100 { color: var(--grey-100); }
+.text-grey-200 { color: var(--grey-200); }
+.text-grey-400 { color: var(--grey-400); }
+.text-grey-500 { color: var(--grey-500); }
+
+.border-purple-300 { border-color: var(--purple-300)!important; }
+.border-purple-500 { border-color: var(--purple-500)!important; }
